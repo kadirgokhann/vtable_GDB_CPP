@@ -1,0 +1,3 @@
+info proc mappings
+info symbol 0x
+info vtbl pointer
