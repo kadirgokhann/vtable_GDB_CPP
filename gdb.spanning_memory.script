@@ -1,0 +1,11 @@
+define infosymrange
+    set $start = $arg0
+    set $end = $arg1
+    while $start <= $end
+        printf "Address %p: ", $start
+        info symbol $start
+        set $start = $start + 1
+    end
+end
+
+infosymrange 0x400000 0x4000ff
